@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import Header from './Header';
+import Footer from './Footer';
 
 export default function Index() {
     return (
@@ -15,6 +16,7 @@ export default function Index() {
                     </div>
                 </div>
             </div>
+            <Footer/>
         </div>
     );
 }
