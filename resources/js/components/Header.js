@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
+import Category from "./category/Index";
 
 export default function Header() {
   return (
@@ -31,6 +32,11 @@ export default function Header() {
                   About Us
                 </Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/superadmin/category">
+                  Category
+                </Link>
+              </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
               <input
@@ -50,6 +56,7 @@ export default function Header() {
         </nav>
         <Route exact path="/superadmin/dashboard" component={Home} />
         <Route exact path="/superadmin/about" component={About} />
+        <Route exact path="/superadmin/category" component={Category} />
       </div>
     </Router>
   );
