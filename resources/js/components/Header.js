@@ -19,17 +19,16 @@ export default function Header() {
           >
             <span className="navbar-toggler-icon"></span>
           </button>
-
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <Link className="nav-link" to="/superadmin/dashabord">
-                  Home{" "}
+                <Link className="nav-link" to="/superadmin/dashboard">
+                  Home
                 </Link>
               </li>
               <li className="nav-item">
                 <Link className="nav-link" to="/superadmin/about">
-                  About Us{" "}
+                  About Us
                 </Link>
               </li>
             </ul>
@@ -49,7 +48,6 @@ export default function Header() {
             </form>
           </div>
         </nav>
-
         <Route exact path="/superadmin/dashboard" component={Home} />
         <Route exact path="/superadmin/about" component={About} />
       </div>
