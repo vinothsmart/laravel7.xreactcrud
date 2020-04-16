@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <Router>
       <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <button
             className="navbar-toggler"
             type="button"

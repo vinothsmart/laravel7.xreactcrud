@@ -8,8 +8,9 @@ export default function Index() {
         <div>
             <Router>
                 <div>
-                    <Link to="/superadmin/category">Listing</Link>
-                    <Link to="/superadmin/category/add">Add</Link>
+                    <hr/>
+                    <Link to="/superadmin/category" className="btn btn-primary mr-1 mb-5">Listing</Link>
+                    <Link to="/superadmin/category/add" className="btn btn-primary mb-5">Add</Link>
                     <Route exact path="/superadmin/category" component={Listing} />
                     <Route exact path="/superadmin/category/add" component={Add} />
                 </div>
