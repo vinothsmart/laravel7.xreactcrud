@@ -20,3 +20,5 @@ Route::get('/', function () {
 Route::get('/superadmin/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/superadmin/category','Web\CategoryController@index');
